@@ -1,4 +1,5 @@
 let sections;
+
 export default sections = [
     {
         title: 'hats',
