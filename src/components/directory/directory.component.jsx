@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 import sections from "./sections";
 
@@ -12,6 +13,7 @@ class Directory extends Component{
                 this.state = {
                         sections : sections
                 }
+                console.log(this.props);
         }
 
         render(){
@@ -26,12 +28,13 @@ class Directory extends Component{
                             {/*                                                                 linkURL={linkURL}/>)) }*/}
 
                             { sections.map( ({ id, ...restOfProps}) => (<MenuItem key={id} {...restOfProps} />)) }
-
                     </div>
                 )
         }
 
 }
 
+// when you wrap the component with `withRouter` it produces a improved component with the same name and but has all the route properties passed to its child component
+// so wrapping Directory will not work for menuitem. Each item that needs those route properties will have to wrapped individually.
 
-export default Directory;
+export default withRouter(Directory);
