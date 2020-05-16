@@ -5,7 +5,7 @@ import CollectionPreview from "../../components/collection-preview/collection-pr
 
 // import GoToLinkButton from "../../components/go-to-link-button/go-to-link-button.component";
 
-class Shoppage extends Component {
+class ShopPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,4 +32,4 @@ class Shoppage extends Component {
 
 }
 
-export default withRouter(Shoppage);
+export default withRouter(ShopPage);

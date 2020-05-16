@@ -3,8 +3,9 @@ import  { Route, Switch } from "react-router-dom";
 
 import './App.css';
 import Homepage from "./pages/homepage.component";
-import Shoppage from "./pages/shop/shop.component";
+import ShopPage from "./pages/shop/shop.component";
 import CollectionPreview from "./components/collection-preview/collection-preview.component";
+import Header from "./components/header/header.component"
 
 
 const HatsPage = () => (
@@ -18,8 +19,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+          <Header />
           <Switch>
-              <Route  path='/shop' component={Shoppage} />
+              <Route  path='/shop' component={ShopPage} />
               <Route  path='/hats' component={HatsPage} />
               <Route  path='/collections' component={CollectionPreview} />
               <Route  path='/' component={Homepage} />
