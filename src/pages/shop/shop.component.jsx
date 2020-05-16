@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom";
 import SHOP_DATA from "../../data/shop.data";
-import GoToLinkButton from "../../components/go-to-link-button/go-to-link-button.component";
 import CollectionPreview from "../../components/collection-preview/collection-preview.component";
+
+// import GoToLinkButton from "../../components/go-to-link-button/go-to-link-button.component";
 
 class Shoppage extends Component {
     constructor(props) {
@@ -20,8 +21,8 @@ class Shoppage extends Component {
         const { collections } = this.state;
         return(
             <div>
-                <GoToLinkButton goToFunc={this.goToLink} link={"/"} textButton="Go to Home"/>
-                <GoToLinkButton goToFunc={this.goToLink} link={"/hats"} textButton="Go to hats"/>
+                {/*<GoToLinkButton goToFunc={this.goToLink} link={"/"} textButton="Go to Home"/>*/}
+                {/*<GoToLinkButton goToFunc={this.goToLink} link={"/hats"} textButton="Go to hats"/>*/}
                 {
                     // iterate through the shop data and make a collection preview for each e.g: hats, sneakers, etc.
                     collections.map(({id,...restOfCollection}) => <CollectionPreview key={id} {...restOfCollection}/>)
