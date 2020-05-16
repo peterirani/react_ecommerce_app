@@ -22,7 +22,6 @@ class Shoppage extends Component {
         return(
             <div>
                 {/*<GoToLinkButton goToFunc={this.goToLink} link={"/"} textButton="Go to Home"/>*/}
-                {/*<GoToLinkButton goToFunc={this.goToLink} link={"/hats"} textButton="Go to hats"/>*/}
                 {
                     // iterate through the shop data and make a collection preview for each e.g: hats, sneakers, etc.
                     collections.map(({id,...restOfCollection}) => <CollectionPreview key={id} {...restOfCollection}/>)
