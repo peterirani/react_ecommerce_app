@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview:
+---------
+This is my attempt to make an ecommerce app using React, Redux, Firebase, GraphQL, NextJS and Stripe. 
+
+
+### Following are default scripts that come with React README.md
 
 ## Available Scripts
 
